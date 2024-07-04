@@ -1,0 +1,204 @@
+.logo{
+    height: 100px;
+    padding: 10px;
+}
+
+.header-title{
+    margin-bottom: 0;
+    
+}
+.menu{
+    font-size: 18px;
+}
+
+.nav-item{
+    max-width: 800px; 
+}
+
+.nav-link{
+    font-size: 18px;
+}
+
+.nav-link:hover{
+    font-size: 21px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.sub-tabs {
+    display: none;
+}
+
+.nav-item:hover .sub-tabs {
+    display: block;
+}
+
+
+@media (max-width: 767px) {
+    .menu {
+        flex-direction: column;
+    }
+}
+
+
+.leftpart{
+ background-color: #cae1ff
+
+ ;
+
+}
+
+.rightpart{
+    background-color: white;
+}
+
+image_hover{
+    
+    transition: transform 0.3s ease;
+    
+}
+
+.image_hover:hover{
+    transform: scale(1.1);
+   
+}
+
+
+.rightpart img  {
+    margin-top: 20px; /* veya istediğiniz başka bir değer */
+    margin-left: 30px;
+}
+
+        #toggle1,
+        #toggle2,
+        #toggle3,
+        #toggle4,
+        #toggle5,
+        #toggle6 {
+            /*daha fazla daha az */
+            display: none;
+        }
+
+        .toggle-label {
+            cursor: pointer;
+        }
+
+        .duyuru-icerik {
+            display: none;
+          
+        }
+
+        /* Checkbox işaretlendiğinde duyuru içeriğini göster */
+        #toggle1:checked~.duyuru:nth-of-type(1) .duyuru-icerik,
+        #toggle2:checked~.duyuru:nth-of-type(2) .duyuru-icerik,
+        #toggle4:checked~.duyuru:nth-of-type(3) .duyuru-icerik,
+        #toggle3:checked~.duyuru:nth-of-type(1) .duyuru-icerik,
+        #toggle5:checked~.duyuru:nth-of-type(2) .duyuru-icerik,
+        #toggle6:checked~.duyuru:nth-of-type(3) .duyuru-icerik
+         {
+            display: block;
+        }
+
+        /* Checkbox işaretlendiğinde etiket metnini güncelle */
+        #toggle1:checked~.duyuru:nth-of-type(1) .toggle-label::after,
+        #toggle2:checked~.duyuru:nth-of-type(2) .toggle-label::after,
+        #toggle4:checked~.duyuru:nth-of-type(3) .toggle-label::after,
+        #toggle3:checked~.duyuru:nth-of-type(1) .toggle-label::after,
+        #toggle5:checked~.duyuru:nth-of-type(2) .toggle-label::after,
+        #toggle6:checked~.duyuru:nth-of-type(3) .toggle-label::after
+         {
+            content: "Show less";
+        }
+
+        /* Checkbox işaretlenmediğinde etiket metnini güncelle */
+        #toggle1:not(:checked)~.duyuru:nth-of-type(1) .toggle-label::after,
+        #toggle2:not(:checked)~.duyuru:nth-of-type(2) .toggle-label::after,
+        #toggle4:not(:checked)~.duyuru:nth-of-type(3) .toggle-label::after,
+        #toggle3:not(:checked)~.duyuru:nth-of-type(1) .toggle-label::after,
+        #toggle5:not(:checked)~.duyuru:nth-of-type(2) .toggle-label::after,
+        #toggle6:not(:checked)~.duyuru:nth-of-type(3) .toggle-label::after
+         {
+            content: "Show more";
+        }
+
+        .rightpart h3{
+            margin-top: 20px;  
+        }
+        .duyuru{
+            border: 1px solid black;
+            padding: 15px;
+            
+        }
+
+        .location{
+            margin-top: 260px;
+        }
+
+        .site-footer{
+            
+            padding: 20px;
+
+            
+    bottom: 0;
+    width: 100%;
+ 
+    padding: 10px 0;
+    
+        }
+
+        .nav-link.active {
+            font-weight: bold;
+            font-size: 21px;
+            border: 1px solid black;
+        }
+
+        .picture{
+            opacity: 1;
+            transition: opacity 0.3 ease;
+            width: 400px;
+            height: 200px;
+            
+            
+        }
+
+        .picture:hover {
+            opacity: 0.5; /* 0 ile 1 arasında bir değer kullanarak transparanlık seviyesini ayarlayabilirsiniz */
+        }
+
+        form {
+            max-width: 300px;
+            margin: 0 auto;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        input[type="submit"] {
+            width: 40%;
+            padding: 5px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        
+
+        
+
+
